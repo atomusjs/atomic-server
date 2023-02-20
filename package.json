@@ -1,0 +1,48 @@
+{
+  "name": "@atomusjs/atomic-server",
+  "description": "An atomic framework to build server applications",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/core"
+    ]
+  },
+  "author": {
+    "name": "Ryan Izac",
+    "email": "io.ryan@outlook.com",
+    "url": "http://ryanizac.com.br/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atomusjs/atomic-server"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/atomic-server.umd.cjs",
+  "module": "./dist/atomic-server.js",
+  "types": "./dist/types/main.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/atomic-server.js",
+      "require": "./dist/atomic-server.umd.cjs"
+    }
+  },
+  "keywords": [
+    "atomic-server",
+    "server",
+    "framework",
+    "http",
+    "restful",
+    "framework"
+  ],
+  "scripts": {
+    "dev": "",
+    "test": "",
+    "build": ""
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
