@@ -5,6 +5,7 @@ export const defaultBuildConfig = {
   bundle: true,
   platform: "node",
   keepNames: true,
+  packages: "external",
 };
 
 /**
