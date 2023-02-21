@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "useDefineForClassFields": true,
+    "esModuleInterop": false,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "outDir": "./dist",
+    "rootDir": "./packages/core",
+    "baseUrl": "./packages/core/src",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["packages/core/**/*"]
+}
