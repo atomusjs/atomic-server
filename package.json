@@ -41,7 +41,7 @@
   "scripts": {
     "dev": "",
     "test": "",
-    "build": "node --experimental-specifier-resolution=node packages/compiler --lib=packages/core/src/index.ts && tsc -p tsconfig.declaration.json"
+    "build": "rm -rf dist && node --experimental-specifier-resolution=node packages/compiler --lib=packages/core/src/index.ts && tsc -p tsconfig.declaration.json"
   },
   "dependencies": {},
   "devDependencies": {
