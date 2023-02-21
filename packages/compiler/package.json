@@ -1,0 +1,10 @@
+{
+  "name": "@atomic-server/compiler",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "type": "module",
+  "dependencies": {
+    "@esbuild-plugins/tsconfig-paths": "^0.1.2",
+    "esbuild": "^0.17.10"
+  }
+}
