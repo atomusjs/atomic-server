@@ -3,18 +3,18 @@ import { ServerError } from "./server-error";
 import { ServerOptions } from "./server-options";
 
 export class Server<
-  Framework extends AvailableServers = AvailableServers.EXPRESS
+  Library extends AvailableServers = AvailableServers.EXPRESS
 > {
-  public readonly server: Framework;
+  public readonly lib: Library;
   public readonly port: number;
 
-  constructor(options: ServerOptions<Framework>) {
-    this.server = options.server || this.getDefaultServer();
+  constructor(options: ServerOptions<Library>) {
+    this.lib = options.server || this.getDefaultServer();
     this.port = options.port;
   }
 
   private getDefaultServer() {
-    return AvailableServers.EXPRESS as Framework;
+    return AvailableServers.EXPRESS as Library;
   }
 
   async start() {
