@@ -1,4 +1,6 @@
-export function extractBasepath<C extends Function>(
+import { IController } from "./ports";
+
+export function extractBasepath<C extends IController>(
   controller: C,
   basepath?: string
 ) {
