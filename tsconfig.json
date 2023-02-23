@@ -8,6 +8,8 @@
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "Node",
     "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "types": ["node", "jest"],
     "outDir": "./dist",
     "rootDir": "./packages/core",
